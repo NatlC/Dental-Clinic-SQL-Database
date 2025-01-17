@@ -1,6 +1,6 @@
 #!/bin/sh
 #export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib
-sqlplus64 "n12chan/01208247@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=oracle12c.scs.ryerson.ca)(Port=1521))(CONNECT_DATA=(SID=orcl12c)))" <<EOF
+sqlplus64 "usr/pwd@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=oracle12c.scs.ryerson.ca)(Port=1521))(CONNECT_DATA=(SID=orcl12c)))" <<EOF
 INSERT INTO Dentist (DentistID, FirstName, LastName, Phone, Email, Specialization)
 VALUES (1, 'John', 'Smith', '555-123-4567', 'john.smith@example.com', 'Orthodontics');
 
